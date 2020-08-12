@@ -4,11 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build" : "netlify-lambda build functions",
-    "dev" : "netlify-lambda serve functions"
+    "build": "netlify-lambda build functions",
+    "dev": "netlify-lambda serve functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmarMohamed11/Serverless-API.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OmarMohamed11/Serverless-API/issues"
+  },
+  "homepage": "https://github.com/OmarMohamed11/Serverless-API#readme",
   "dependencies": {
     "netlify-lambda": "^2.0.1"
   }
