@@ -1,4 +1,4 @@
-export const data = [
+ const data = [
     {
       "_id": "5f343618d3ab2e57d4419454",
       "gender": "female",
@@ -56,3 +56,5 @@ export const data = [
       "address": "371 Guider Avenue, Catherine, Louisiana, 1751"
     }
   ]
+
+module.exports=data;
