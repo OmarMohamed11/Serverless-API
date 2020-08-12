@@ -1,3 +1,4 @@
 [build]
-    functions ="./functions"
-    command ="npm i"
+    command = "npm run build"
+    functions =".netlify/functions/"
+    
