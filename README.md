@@ -22,3 +22,7 @@ Serverless-API uses [netlify functions](https://docs.netlify.com/functions/overv
 ### How To Use
 
 this function uses `queryStringParameters` with "fileName" parameter.
+
+### Trying function
+
+https://flamboyant-engelbart-d87e10.netlify.app/.netlify/functions/serve?fileName=students
