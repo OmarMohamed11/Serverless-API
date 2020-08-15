@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/OmarMohamed11/Serverless-API#readme",
   "dependencies": {
+    "faker": "^4.1.0",
     "netlify-lambda": "^2.0.1"
   }
 }
