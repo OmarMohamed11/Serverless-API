@@ -1,7 +1,7 @@
 {
   "name": "serverless-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mocking API endpoint calls with netlify functions",
   "main": "index.js",
   "scripts": {
     "build": "netlify-lambda build functions",
