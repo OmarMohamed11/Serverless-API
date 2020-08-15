@@ -1,5 +1,7 @@
 exports.handler =  async  event =>{
-   const data =  require(`../data/${event.queryStringParameters.fileName}`);
+    let {path} = event;
+    let file = path.split("/")[4];
+   const data =  require(`../data/${file}`);
    console.log(event.path)
     console.log(data);
     return {
