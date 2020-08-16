@@ -11,6 +11,7 @@
      scheme.address = faker.address.streetAddress();
      data.push(scheme);
    }
+   return data;
  }
 
 module.exports=getStudents;
