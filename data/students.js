@@ -1,7 +1,8 @@
  const faker = require('faker');
 
- const data = []
+
  function getStudents(count) {
+  const data = []
    for (let i = 0; i < count; i++) {
      let scheme ={}
      scheme.id = faker.random.uuid();
