@@ -2,7 +2,8 @@ exports.handler =  async  event =>{
     try {
         let {path} = event;
         let file = path.split("/")[4];
-        const data =  require(`../data/${file}`);
+        let count = /^\d/.test(path.split("/")[5]) ? path.split("/")[5] : 10;
+        const data =  require(`../data/${file}`)(count);
         console.log(event.path)
         console.log(data);
         return {
