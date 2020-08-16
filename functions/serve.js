@@ -10,6 +10,9 @@ exports.handler =  async  event =>{
             body: JSON.stringify({data})
           }
     } catch (error) {
+        if (error.errorMessage == "Cannot find module './undefined'") {
+            error.errorMessage = "please specify file to fetch"
+        }
         throw(error);
     }
 
