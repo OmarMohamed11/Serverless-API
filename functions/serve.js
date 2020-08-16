@@ -4,12 +4,11 @@ exports.handler =  async  event =>{
         let file = path.split("/")[4];
         let count = /^\d/.test(path.split("/")[5]) ? path.split("/")[5] : 10;
         const getData =  require(`../data/${file}`);
-        let data = getData(count)
-        console.log(path.split("/")[5]);
-        console.log(count);
+        let data = [];
+        data = getData(count)
         return {
             statusCode: 200,
-            body: JSON.stringify({data})
+            body: JSON.stringify(data)
         }
     } catch (error) {
         if (error.message  == "Cannot find module './undefined'" || error.message  == "Cannot find module './'") {
