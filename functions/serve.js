@@ -7,7 +7,10 @@ exports.handler =  async  event =>{
         let data = getData(count)
         return {
             statusCode: 200,
-            body: JSON.stringify(data)
+            body: JSON.stringify(data),
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+              }
         }
     } catch (error) {
         if (error.message  == "Cannot find module './undefined'" || error.message  == "Cannot find module './'") {
