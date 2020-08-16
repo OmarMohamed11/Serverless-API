@@ -3,9 +3,10 @@ exports.handler =  async  event =>{
         let {path} = event;
         let file = path.split("/")[4];
         let count = /^\d/.test(path.split("/")[5]) ? path.split("/")[5] : 10;
-        const data =  require(`../data/${file}`)(count);
-        console.log(event.path)
-        console.log(data);
+        const getData =  require(`../data/${file}`);
+        let data = getData(count)
+        console.log(path.split("/")[5]);
+        console.log(count);
         return {
             statusCode: 200,
             body: JSON.stringify({data})
