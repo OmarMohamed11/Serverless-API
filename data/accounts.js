@@ -21,6 +21,7 @@ function getAccounts(count) {
     }
     scheme.totalAmount = faker.random.number();
     scheme.adjustmentAmount = faker.random.number();
+    scheme.paymentMethod = faker.name.findName();
     data.push(scheme);
   }
   return data;
